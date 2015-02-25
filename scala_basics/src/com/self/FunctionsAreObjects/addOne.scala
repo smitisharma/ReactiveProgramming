@@ -1,0 +1,5 @@
+package com.self.FunctionsAreObjects
+
+object addOne extends Function1[Int,Int]{
+	 def apply(m: Int): Int = m + 1
+}

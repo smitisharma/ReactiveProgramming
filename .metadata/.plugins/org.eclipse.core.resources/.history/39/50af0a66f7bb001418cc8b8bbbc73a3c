@@ -1,0 +1,6 @@
+package com.self.Exceptions
+
+class remoteCalculatorService {
+
+  def add(m:int , n:Int) = m +n
+}

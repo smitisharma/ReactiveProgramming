@@ -1,0 +1,299 @@
+2014-09-20 12:01:54,571 ERROR [Worker-1] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-09-20 12:01:54,572 ERROR [Worker-1] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-09-20 12:01:54,572 ERROR [Worker-1] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-09-20 15:06:05,642  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - ProgramExecutor actor </home/smiti/Applications/workspace/scala/hello-project/src/greeter/helloWorkSheet.sc> self-healing...
+java.lang.NullPointerException
+	at org.scalaide.worksheet.editor.ScriptEditor$DefaultEditorProxy.org$scalaide$worksheet$editor$ScriptEditor$DefaultEditorProxy$$doc(ScriptEditor.scala:72)
+	at org.scalaide.worksheet.editor.ScriptEditor$DefaultEditorProxy.getContents(ScriptEditor.scala:74)
+	at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.<init>(IncrementalDocumentMixer.scala:30)
+	at org.scalaide.worksheet.runtime.IncrementalDocumentMixer$.apply(IncrementalDocumentMixer.scala:16)
+	at org.scalaide.worksheet.runtime.ProgramExecutor$$anonfun$act$1$$anonfun$apply$1.applyOrElse(ProgramExecutor.scala:167)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+	at scala.actors.Reactor$class.resumeReceiver(Reactor.scala:129)
+	at org.scalaide.worksheet.runtime.ProgramExecutor.scala$actors$InternalReplyReactor$$super$resumeReceiver(ProgramExecutor.scala:100)
+	at scala.actors.InternalReplyReactor$class.resumeReceiver(InternalReplyReactor.scala:59)
+	at org.scalaide.worksheet.runtime.ProgramExecutor.resumeReceiver(ProgramExecutor.scala:100)
+	at scala.actors.InternalActor$class.searchMailbox(InternalActor.scala:76)
+	at org.scalaide.worksheet.runtime.ProgramExecutor.searchMailbox(ProgramExecutor.scala:100)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(Reactor.scala:117)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:33)
+	at scala.actors.ReactorTask.compute(ReactorTask.scala:63)
+	at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2014-09-22 09:15:43,758 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during askOption
+java.lang.AssertionError: assertion failed: Expected exactly one type parameter, found 0 [=> Array[Int]]
+	at scala.Predef$.assert(Predef.scala:179)
+	at scala.tools.nsc.Global.assert(Global.scala:239)
+	at scala.tools.eclipse.javaelements.ScalaJavaMapper$class.mapType(ScalaJavaMapper.scala:196)
+	at scala.tools.eclipse.ScalaPresentationCompiler.mapType(ScalaPresentationCompiler.scala:36)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$ValOwner$class.addVal(ScalaStructureBuilder.scala:591)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$Builder.addVal(ScalaStructureBuilder.scala:872)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$TreeTraverser.traverse(ScalaStructureBuilder.scala:932)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$TreeTraverser$$anonfun$traverse$1.apply(ScalaStructureBuilder.scala:951)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$TreeTraverser$$anonfun$traverse$1.apply(ScalaStructureBuilder.scala:951)
+	at scala.collection.immutable.List.foreach(List.scala:318)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$TreeTraverser.traverse(ScalaStructureBuilder.scala:951)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$TreeTraverser$$anonfun$traverse$1.apply(ScalaStructureBuilder.scala:951)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$TreeTraverser$$anonfun$traverse$1.apply(ScalaStructureBuilder.scala:951)
+	at scala.collection.immutable.List.foreach(List.scala:318)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$TreeTraverser.traverse(ScalaStructureBuilder.scala:951)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$TreeTraverser$$anonfun$traverse$1.apply(ScalaStructureBuilder.scala:951)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$TreeTraverser$$anonfun$traverse$1.apply(ScalaStructureBuilder.scala:951)
+	at scala.collection.immutable.List.foreach(List.scala:318)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser$TreeTraverser.traverse(ScalaStructureBuilder.scala:951)
+	at scala.tools.eclipse.javaelements.ScalaStructureBuilder$StructureBuilderTraverser.traverse(ScalaStructureBuilder.scala:904)
+	at scala.tools.eclipse.javaelements.ScalaCompilationUnit$$anonfun$buildStructure$2$$anonfun$apply$5$$anonfun$apply$1.apply$mcV$sp(ScalaCompilationUnit.scala:89)
+	at scala.tools.eclipse.javaelements.ScalaCompilationUnit$$anonfun$buildStructure$2$$anonfun$apply$5$$anonfun$apply$1.apply(ScalaCompilationUnit.scala:88)
+	at scala.tools.eclipse.javaelements.ScalaCompilationUnit$$anonfun$buildStructure$2$$anonfun$apply$5$$anonfun$apply$1.apply(ScalaCompilationUnit.scala:88)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:346)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+2014-09-22 09:20:32,178  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2014-09-22 19:58:33,241 ERROR [Worker-3] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-09-22 19:58:33,264 ERROR [Worker-3] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-09-22 19:58:33,264 ERROR [Worker-3] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-09-22 20:14:14,286  WARN [main] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2014-10-04 14:08:05,060 ERROR [Worker-33] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-04 14:08:05,070 ERROR [Worker-33] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-04 14:08:05,070 ERROR [Worker-33] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-04 22:46:21,562 ERROR [Worker-4] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-04 22:46:21,563 ERROR [Worker-4] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-04 22:46:21,563 ERROR [Worker-4] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-08 22:48:12,119 ERROR [Output Stream Monitor] - System.err - Exception in thread "Output Stream Monitor"
+2014-10-08 22:48:12,164 ERROR [Output Stream Monitor] - System.err - java.lang.OutOfMemoryError: Java heap space
+2014-10-08 22:48:12,164 ERROR [Output Stream Monitor] - System.err - at java.util.Arrays.copyOf(Arrays.java:2367)
+2014-10-08 22:48:12,164 ERROR [Output Stream Monitor] - System.err - at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+2014-10-08 22:48:12,164 ERROR [Output Stream Monitor] - System.err - at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+2014-10-08 22:48:12,164 ERROR [Output Stream Monitor] - System.err - at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:415)
+2014-10-08 22:48:12,164 ERROR [Output Stream Monitor] - System.err - at java.lang.StringBuffer.append(StringBuffer.java:237)
+2014-10-08 22:48:12,164 ERROR [Output Stream Monitor] - System.err - at java.io.StringWriter.write(StringWriter.java:101)
+2014-10-08 22:48:12,164 ERROR [Output Stream Monitor] - System.err - at org.scalaide.worksheet.runtime.ProgramExecutor$StreamListener.streamAppended(ProgramExecutor.scala:50)
+2014-10-08 22:48:12,164 ERROR [Output Stream Monitor] - System.err - at org.eclipse.debug.internal.core.OutputStreamMonitor$ContentNotifier.run(OutputStreamMonitor.java:258)
+2014-10-08 22:48:12,165 ERROR [Output Stream Monitor] - System.err - at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+2014-10-08 22:48:12,165 ERROR [Output Stream Monitor] - System.err - at org.eclipse.debug.internal.core.OutputStreamMonitor$ContentNotifier.notifyAppend(OutputStreamMonitor.java:268)
+2014-10-08 22:48:12,165 ERROR [Output Stream Monitor] - System.err - at org.eclipse.debug.internal.core.OutputStreamMonitor.fireStreamAppended(OutputStreamMonitor.java:117)
+2014-10-08 22:48:12,165 ERROR [Output Stream Monitor] - System.err - at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:157)
+2014-10-08 22:48:12,165 ERROR [Output Stream Monitor] - System.err - at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:135)
+2014-10-08 22:48:12,165 ERROR [Output Stream Monitor] - System.err - at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:208)
+2014-10-08 22:48:12,165 ERROR [Output Stream Monitor] - System.err - at java.lang.Thread.run(Thread.java:744)
+2014-10-08 22:48:25,431 ERROR [ForkJoinPool-1-worker-3] - System.err - IncrementalDocumentMixer <actor>: caught java.lang.OutOfMemoryError: Java heap space
+2014-10-08 22:48:25,432 ERROR [ForkJoinPool-1-worker-3] - System.err - java.lang.OutOfMemoryError: Java heap space
+2014-10-08 22:48:25,432 ERROR [ForkJoinPool-1-worker-3] - System.err - at java.util.Arrays.copyOf(Arrays.java:2367)
+2014-10-08 22:48:25,432 ERROR [ForkJoinPool-1-worker-3] - System.err - at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+2014-10-08 22:48:25,432 ERROR [ForkJoinPool-1-worker-3] - System.err - at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+2014-10-08 22:48:25,432 ERROR [ForkJoinPool-1-worker-3] - System.err - at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:415)
+2014-10-08 22:48:25,432 ERROR [ForkJoinPool-1-worker-3] - System.err - at java.lang.StringBuilder.append(StringBuilder.java:132)
+2014-10-08 22:48:25,432 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:197)
+2014-10-08 22:48:25,432 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableOnce$$anonfun$addString$1.apply(TraversableOnce.scala:327)
+2014-10-08 22:48:25,432 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.immutable.List.foreach(List.scala:318)
+2014-10-08 22:48:25,432 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableOnce$class.addString(TraversableOnce.scala:320)
+2014-10-08 22:48:25,432 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.AbstractTraversable.addString(Traversable.scala:105)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableOnce$class.mkString(TraversableOnce.scala:286)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.AbstractTraversable.mkString(Traversable.scala:105)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableOnce$class.mkString(TraversableOnce.scala:288)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.AbstractTraversable.mkString(Traversable.scala:105)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.generic.TraversableForwarder$class.mkString(TraversableForwarder.scala:71)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.mutable.ListBuffer.mkString(ListBuffer.scala:45)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer$$anonfun$2.apply(IncrementalDocumentMixer.scala:101)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer$$anonfun$2.apply(IncrementalDocumentMixer.scala:100)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableLike$WithFilter$$anonfun$map$2.apply(TraversableLike.scala:722)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.mutable.LinkedHashMap.foreach(LinkedHashMap.scala:135)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableLike$WithFilter.map(TraversableLike.scala:721)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.pruneOutputPerEvaluation(IncrementalDocumentMixer.scala:100)
+2014-10-08 22:48:25,433 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.org$scalaide$worksheet$runtime$IncrementalDocumentMixer$$updateDocument(IncrementalDocumentMixer.scala:50)
+2014-10-08 22:48:25,434 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer$$anonfun$act$1$$anonfun$apply$1.applyOrElse(IncrementalDocumentMixer.scala:39)
+2014-10-08 22:48:25,434 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+2014-10-08 22:48:25,434 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+2014-10-08 22:48:25,434 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+2014-10-08 22:48:25,434 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+2014-10-08 22:48:25,434 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.actors.Reactor$class.resumeReceiver(Reactor.scala:129)
+2014-10-08 22:48:25,434 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.scala$actors$InternalReplyReactor$$super$resumeReceiver(IncrementalDocumentMixer.scala:27)
+2014-10-08 22:48:25,434 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.actors.InternalReplyReactor$class.resumeReceiver(InternalReplyReactor.scala:59)
+2014-10-08 22:48:25,435 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.resumeReceiver(IncrementalDocumentMixer.scala:27)
+2014-10-08 22:48:25,436 ERROR [ForkJoinPool-1-worker-3] - System.err - IncrementalDocumentMixer <actor>: caught java.lang.OutOfMemoryError: Java heap space
+2014-10-08 22:48:25,436 ERROR [ForkJoinPool-1-worker-3] - System.err - java.lang.OutOfMemoryError: Java heap space
+2014-10-08 22:48:25,436 ERROR [ForkJoinPool-1-worker-3] - System.err - at java.util.Arrays.copyOf(Arrays.java:2367)
+2014-10-08 22:48:25,436 ERROR [ForkJoinPool-1-worker-3] - System.err - at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+2014-10-08 22:48:25,436 ERROR [ForkJoinPool-1-worker-3] - System.err - at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+2014-10-08 22:48:25,436 ERROR [ForkJoinPool-1-worker-3] - System.err - at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:415)
+2014-10-08 22:48:25,436 ERROR [ForkJoinPool-1-worker-3] - System.err - at java.lang.StringBuilder.append(StringBuilder.java:132)
+2014-10-08 22:48:25,437 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:197)
+2014-10-08 22:48:25,437 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableOnce$$anonfun$addString$1.apply(TraversableOnce.scala:327)
+2014-10-08 22:48:25,437 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.immutable.List.foreach(List.scala:318)
+2014-10-08 22:48:25,437 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableOnce$class.addString(TraversableOnce.scala:320)
+2014-10-08 22:48:25,437 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.AbstractTraversable.addString(Traversable.scala:105)
+2014-10-08 22:48:25,437 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableOnce$class.mkString(TraversableOnce.scala:286)
+2014-10-08 22:48:25,437 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.AbstractTraversable.mkString(Traversable.scala:105)
+2014-10-08 22:48:25,438 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableOnce$class.mkString(TraversableOnce.scala:288)
+2014-10-08 22:48:25,438 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.AbstractTraversable.mkString(Traversable.scala:105)
+2014-10-08 22:48:25,438 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.generic.TraversableForwarder$class.mkString(TraversableForwarder.scala:71)
+2014-10-08 22:48:25,438 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.mutable.ListBuffer.mkString(ListBuffer.scala:45)
+2014-10-08 22:48:25,438 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer$$anonfun$2.apply(IncrementalDocumentMixer.scala:101)
+2014-10-08 22:48:25,438 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer$$anonfun$2.apply(IncrementalDocumentMixer.scala:100)
+2014-10-08 22:48:25,438 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableLike$WithFilter$$anonfun$map$2.apply(TraversableLike.scala:722)
+2014-10-08 22:48:25,439 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.mutable.LinkedHashMap.foreach(LinkedHashMap.scala:135)
+2014-10-08 22:48:25,439 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.collection.TraversableLike$WithFilter.map(TraversableLike.scala:721)
+2014-10-08 22:48:25,439 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.pruneOutputPerEvaluation(IncrementalDocumentMixer.scala:100)
+2014-10-08 22:48:25,439 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.org$scalaide$worksheet$runtime$IncrementalDocumentMixer$$updateDocument(IncrementalDocumentMixer.scala:50)
+2014-10-08 22:48:25,439 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer$$anonfun$act$1$$anonfun$apply$1.applyOrElse(IncrementalDocumentMixer.scala:39)
+2014-10-08 22:48:25,439 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+2014-10-08 22:48:25,439 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+2014-10-08 22:48:25,440 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+2014-10-08 22:48:25,440 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+2014-10-08 22:48:25,440 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.actors.Reactor$class.resumeReceiver(Reactor.scala:129)
+2014-10-08 22:48:25,440 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.scala$actors$InternalReplyReactor$$super$resumeReceiver(IncrementalDocumentMixer.scala:27)
+2014-10-08 22:48:25,440 ERROR [ForkJoinPool-1-worker-3] - System.err - at scala.actors.InternalReplyReactor$class.resumeReceiver(InternalReplyReactor.scala:59)
+2014-10-08 22:48:25,440 ERROR [ForkJoinPool-1-worker-3] - System.err - at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.resumeReceiver(IncrementalDocumentMixer.scala:27)
+2014-10-10 22:16:57,452 ERROR [Worker-5] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-10 22:16:57,470 ERROR [Worker-5] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-10 22:16:57,470 ERROR [Worker-5] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-11 19:46:16,288 ERROR [Worker-12] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-11 19:46:16,300 ERROR [Worker-12] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-11 19:46:16,300 ERROR [Worker-12] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-12 09:23:27,556 ERROR [Worker-25] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2014-10-12 09:23:27,567 ERROR [Worker-25] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2014-10-12 09:23:27,567 ERROR [Worker-25] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2014-10-12 17:56:05,374 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala.runtime in compiler mirror not found.
+2014-10-12 18:05:09,366  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:07:27,782  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,687  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,687  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,687  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,687  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,687  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,687  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,687  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,688  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,688  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,688  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,688  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-10-12 18:39:38,688  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-11-02 23:44:31,076 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during instrumentation of ScriptCompilationUnit(L/progfun/src/week3/overrideEx.sc)
+org.scalaide.worksheet.runtime.MissingTopLevelObjectDeclaration: Couldn't find top level object declaration in source overrideEx.sc
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrumentProgram(SourceInstrumenter.scala:33)
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrument(SourceInstrumenter.scala:20)
+	at org.scalaide.worksheet.runtime.WorksheetRunner$$anonfun$act$1$$anonfun$apply$1.applyOrElse(WorksheetRunner.scala:58)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+	at scala.actors.Reactor$class.resumeReceiver(Reactor.scala:129)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.scala$actors$InternalReplyReactor$$super$resumeReceiver(WorksheetRunner.scala:33)
+	at scala.actors.InternalReplyReactor$class.resumeReceiver(InternalReplyReactor.scala:59)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.resumeReceiver(WorksheetRunner.scala:33)
+	at scala.actors.InternalActor$class.searchMailbox(InternalActor.scala:76)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.searchMailbox(WorksheetRunner.scala:33)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(Reactor.scala:117)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:33)
+	at scala.actors.ReactorTask.compute(ReactorTask.scala:63)
+	at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2014-11-24 10:27:04,512 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - scala.reflect.internal.MissingRequirementError: object scala.runtime in compiler mirror not found.
+2014-11-24 10:27:16,980  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-11-24 10:30:09,015 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during instrumentation of ScriptCompilationUnit(L/progfun/src/week4/polymorphism.sc)
+org.scalaide.worksheet.runtime.MissingTopLevelObjectDeclaration: Couldn't find top level object declaration in source polymorphism.sc
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrumentProgram(SourceInstrumenter.scala:33)
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrument(SourceInstrumenter.scala:20)
+	at org.scalaide.worksheet.runtime.WorksheetRunner$$anonfun$act$1$$anonfun$apply$1.applyOrElse(WorksheetRunner.scala:58)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+	at scala.actors.Reactor$class.resumeReceiver(Reactor.scala:129)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.scala$actors$InternalReplyReactor$$super$resumeReceiver(WorksheetRunner.scala:33)
+	at scala.actors.InternalReplyReactor$class.resumeReceiver(InternalReplyReactor.scala:59)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.resumeReceiver(WorksheetRunner.scala:33)
+	at scala.actors.InternalActor$class.searchMailbox(InternalActor.scala:76)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.searchMailbox(WorksheetRunner.scala:33)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(Reactor.scala:117)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:33)
+	at scala.actors.ReactorTask.compute(ReactorTask.scala:63)
+	at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2014-11-24 10:36:06,494  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-11-24 10:56:13,925  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-11-24 10:56:13,925  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-11-24 10:56:13,925  WARN [main] - SemanticHighlightingReconciliation - Compilation unit for EditorInput TweetSet.scala is `null`. This could indicate a regression.
+2014-11-24 10:56:14,254  WARN [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - ProgramExecutor actor </home/smiti/Applications/workspace/scala/progfun/src/week4/polymorphism.sc> self-healing...
+java.lang.NullPointerException
+	at org.scalaide.worksheet.editor.ScriptEditor$DefaultEditorProxy.org$scalaide$worksheet$editor$ScriptEditor$DefaultEditorProxy$$doc(ScriptEditor.scala:72)
+	at org.scalaide.worksheet.editor.ScriptEditor$DefaultEditorProxy.getContents(ScriptEditor.scala:74)
+	at org.scalaide.worksheet.runtime.IncrementalDocumentMixer.<init>(IncrementalDocumentMixer.scala:30)
+	at org.scalaide.worksheet.runtime.IncrementalDocumentMixer$.apply(IncrementalDocumentMixer.scala:16)
+	at org.scalaide.worksheet.runtime.ProgramExecutor$$anonfun$act$1$$anonfun$apply$1.applyOrElse(ProgramExecutor.scala:167)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+	at scala.actors.Reactor$class.resumeReceiver(Reactor.scala:129)
+	at org.scalaide.worksheet.runtime.ProgramExecutor.scala$actors$InternalReplyReactor$$super$resumeReceiver(ProgramExecutor.scala:100)
+	at scala.actors.InternalReplyReactor$class.resumeReceiver(InternalReplyReactor.scala:59)
+	at org.scalaide.worksheet.runtime.ProgramExecutor.resumeReceiver(ProgramExecutor.scala:100)
+	at scala.actors.InternalActor$class.searchMailbox(InternalActor.scala:76)
+	at org.scalaide.worksheet.runtime.ProgramExecutor.searchMailbox(ProgramExecutor.scala:100)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(Reactor.scala:117)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:33)
+	at scala.actors.ReactorTask.compute(ReactorTask.scala:63)
+	at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2014-11-24 23:12:55,709 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Error during instrumentation of ScriptCompilationUnit(L/progfun/src/week4/polymorphism.sc)
+org.scalaide.worksheet.runtime.MissingTopLevelObjectDeclaration: Couldn't find top level object declaration in source polymorphism.sc
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrumentProgram(SourceInstrumenter.scala:33)
+	at org.scalaide.worksheet.runtime.SourceInstrumenter.instrument(SourceInstrumenter.scala:20)
+	at org.scalaide.worksheet.runtime.WorksheetRunner$$anonfun$act$1$$anonfun$apply$1.applyOrElse(WorksheetRunner.scala:58)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:31)
+	at scala.actors.Reactor$class.resumeReceiver(Reactor.scala:129)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.scala$actors$InternalReplyReactor$$super$resumeReceiver(WorksheetRunner.scala:33)
+	at scala.actors.InternalReplyReactor$class.resumeReceiver(InternalReplyReactor.scala:59)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.resumeReceiver(WorksheetRunner.scala:33)
+	at scala.actors.InternalActor$class.searchMailbox(InternalActor.scala:76)
+	at org.scalaide.worksheet.runtime.WorksheetRunner.searchMailbox(WorksheetRunner.scala:33)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(Reactor.scala:117)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.Reactor$$anonfun$startSearch$1$$anonfun$apply$mcV$sp$1.apply(Reactor.scala:114)
+	at scala.actors.ReactorTask.run(ReactorTask.scala:33)
+	at scala.actors.ReactorTask.compute(ReactorTask.scala:63)
+	at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-02-19 19:49:23,007 ERROR [Worker-22] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-02-19 19:49:23,035 ERROR [Worker-22] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-02-19 19:49:23,035 ERROR [Worker-22] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-02-21 23:01:07,001 ERROR [Worker-1] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-02-21 23:01:07,031 ERROR [Worker-1] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-02-21 23:01:07,031 ERROR [Worker-1] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-02-22 00:16:02,197 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Java Model Exception: Java Model Status [Bar [in [Working copy] Bar.scala [in com.self.object [in src [in scala_basics]]]] does not exist]
+2015-02-22 11:01:01,618 ERROR [Worker-25] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-02-22 11:01:01,646 ERROR [Worker-25] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-02-22 11:01:01,646 ERROR [Worker-25] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2015-02-24 10:30:51,975 ERROR [Worker-0] - System.err - SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2015-02-24 10:30:52,040 ERROR [Worker-0] - System.err - SLF4J: Defaulting to no-operation (NOP) logger implementation
+2015-02-24 10:30:52,040 ERROR [Worker-0] - System.err - SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.

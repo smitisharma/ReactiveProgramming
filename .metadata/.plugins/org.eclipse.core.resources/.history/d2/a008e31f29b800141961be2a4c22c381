@@ -1,0 +1,6 @@
+package com.self.model
+
+class GenericClass[A] {
+
+  def isEmpty = true;
+}

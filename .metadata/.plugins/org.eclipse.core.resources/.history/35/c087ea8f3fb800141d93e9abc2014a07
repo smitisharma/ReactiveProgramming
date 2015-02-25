@@ -1,0 +1,9 @@
+package com.self.model
+
+abstract class IntStack {
+	def isEmpty : Boolean
+	def push(item:Int) : IntStack = new IntNonEmptyStack(item, this)
+	def tail : IntStack
+	def head : Int
+	
+}

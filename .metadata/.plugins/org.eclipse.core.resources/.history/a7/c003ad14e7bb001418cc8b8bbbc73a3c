@@ -1,0 +1,7 @@
+package com.self.patternMatching
+
+object CaseClassTest {
+
+  val hp20b = Calculator("hp", "20b")
+  val hp20B = Calculator("hp", "20b")
+}

@@ -1,0 +1,6 @@
+package com.self.objectDemo
+
+
+  class Bar(foo: String){
+
+}

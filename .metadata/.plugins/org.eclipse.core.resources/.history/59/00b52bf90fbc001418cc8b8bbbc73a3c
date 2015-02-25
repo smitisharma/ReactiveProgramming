@@ -1,0 +1,30 @@
+package com.self.collections
+
+object MapOperations extends App{
+
+    var map = Map("one"->1 , "two"->2)
+    //var res1 = map.get("one")
+    var res1 = map.get("three")
+    
+	// It the key is defined in map then We want to multiply the number by two, otherwise return 0.
+    //way 1 
+	val result1 = if (res1.isDefined) {
+		res1.get * 2
+	} else {
+		0
+	}
+    
+    //if res1 defined then get the value else return 0 
+    //way 2 
+    val result2 = res1.getOrElse(0) * 2
+
+    println(result1+"  "+result1)
+    
+    
+    //way 3
+    val result2 = res1 match {
+  case Some(n) => n * 2
+  case None => 0
+}
+
+}

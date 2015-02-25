@@ -1,0 +1,9 @@
+package com.self.apply
+
+object TestBarApply extends App{
+  
+  val bar = new Bar
+  println(bar())
+  
+
+}

@@ -1,0 +1,13 @@
+package com.self.patternMatching
+
+object Example1 {
+  
+  val times = 1
+  
+  times match{
+    case 1 => "one"
+    case 2 => "two"
+    case _ => "random"
+  }
+
+}

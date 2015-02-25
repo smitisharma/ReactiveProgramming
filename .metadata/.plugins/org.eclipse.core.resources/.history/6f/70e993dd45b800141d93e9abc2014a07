@@ -1,0 +1,11 @@
+package com.self.model
+
+class IntEmptyStack extends IntStack{
+  
+  def isEmpty =true
+  
+  //to throw customized exception as EmptyStack.top
+  def head = error("EmptyStack.top")
+  def tail = error("EmptyStack.tail")
+
+}

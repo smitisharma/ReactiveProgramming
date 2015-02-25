@@ -1,0 +1,6 @@
+package com.self.model
+
+object AnonymousFunction {
+	(x:Int) => x+1
+	
+}

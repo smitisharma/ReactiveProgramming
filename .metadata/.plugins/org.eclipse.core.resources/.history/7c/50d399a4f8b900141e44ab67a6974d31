@@ -1,0 +1,8 @@
+package com.self.apply
+
+object TestApply {
+
+  val newFoo = FooMaker()
+  println(newFoo.fooVariable)
+  
+}

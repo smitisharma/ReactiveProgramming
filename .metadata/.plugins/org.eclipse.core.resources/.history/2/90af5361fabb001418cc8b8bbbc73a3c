@@ -1,0 +1,12 @@
+package com.self.collections
+
+object CollectionEx1 extends App{
+
+  val list = List(11,11,12)
+  println(list +" contains 1  "+ list.contains(11) +"  ==>> "+list(2))
+  
+  var set = Set(11,11,12)
+  println(set+"  "+set.contains(13)+"  "+set(1))
+
+  
+}

@@ -1,0 +1,6 @@
+package com.self.collections.FunctionalCombinators
+
+//partition splits a list based on where it falls with respect to a predicate function.
+object partition {
+
+}

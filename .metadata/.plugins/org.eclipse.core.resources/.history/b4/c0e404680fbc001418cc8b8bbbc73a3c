@@ -1,0 +1,16 @@
+package com.self.collections
+
+object MapOperations extends App{
+
+    var map = Map("one"->1 , "two"->2)
+    var res1 = map.get("one")
+    
+	// We want to multiply the number by two, otherwise return 0.
+	val result = if (res1.isDefined) {
+		res1.get * 2
+	} else {
+		0
+	}
+    println(result)
+
+}

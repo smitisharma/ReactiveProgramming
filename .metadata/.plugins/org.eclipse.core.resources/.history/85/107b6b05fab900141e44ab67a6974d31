@@ -1,0 +1,6 @@
+package com.self.object
+
+
+  class Bar(foo: String){
+
+}

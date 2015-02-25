@@ -1,0 +1,6 @@
+package com.self.apply
+
+object FooMaker {
+
+  def apply() = new Foo
+}

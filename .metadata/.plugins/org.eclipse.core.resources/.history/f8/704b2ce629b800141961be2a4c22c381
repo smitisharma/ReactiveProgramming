@@ -1,0 +1,5 @@
+package com.self.model
+
+abstract class IntStack {
+
+}

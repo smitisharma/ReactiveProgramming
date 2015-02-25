@@ -1,0 +1,6 @@
+package com.self.selfTrait
+
+trait Car {
+   val brand: String
+
+}

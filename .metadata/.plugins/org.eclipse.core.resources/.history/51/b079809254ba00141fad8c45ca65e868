@@ -1,0 +1,5 @@
+package com.self.FunctionsAreObjects
+
+class ClassExtendingFunction extends Function1[Int,Int]{
+
+}

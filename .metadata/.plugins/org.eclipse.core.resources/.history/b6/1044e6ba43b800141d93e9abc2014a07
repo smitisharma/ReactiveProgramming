@@ -1,0 +1,25 @@
+package com.self
+import com.self.model.IntEmptyStack
+//import com.self.model.IntNonEmptyStack
+
+
+object stackTest extends App{
+  /* var obj = new com.self.model.AbstractWithParamImpl(3);
+  println(obj.abstractMethod());
+  
+  val emptyStack1 = new com.self.model.Circle(3);
+  println(emptyStack1.getArea)*/
+  
+  val emptyStack = new IntEmptyStack();
+  
+   println("is stack empty "+emptyStack.isEmpty);
+  println("stack head  "+emptyStack.head);  // Will throw exception as "EmptyStack.top"
+  
+  val stack = new com.self.model.IntNonEmptyStack(2,emptyStack);
+  
+  //val stack = new IntNonEmptyStack(1,new IntNonEmptyStack(2, emptyStack))
+  //println(stack.isEmpty)
+  
+  
+
+}

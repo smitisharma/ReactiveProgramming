@@ -1,0 +1,5 @@
+package com.self.collections.FunctionalCombinators
+
+object ListFilter extends App{
+
+}

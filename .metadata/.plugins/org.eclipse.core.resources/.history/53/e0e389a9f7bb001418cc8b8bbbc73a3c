@@ -1,0 +1,12 @@
+package com.self.Exceptions
+
+class Exception1 {
+  
+   var obj = new remoteCalculatorService()
+
+	try{
+	 obj.add(3, 4)
+	}catch{
+	  
+	}
+}

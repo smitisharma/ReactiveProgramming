@@ -1,0 +1,8 @@
+package com.self.collections.FunctionalCombinators
+
+object ListFilter extends App{
+  
+  var numbers = List(1,2,3)
+ 
+   var filteredNumbers = numbers.filter(i => i%2==0)
+}

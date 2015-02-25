@@ -1,0 +1,7 @@
+package com.self.FunctionsAreObjects
+
+object TestClassExtendingFunction extends App {
+  
+  val obj = new ClassExtendingFunction
+
+}

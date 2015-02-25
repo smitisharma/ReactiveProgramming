@@ -1,0 +1,9 @@
+package com.self.model
+//push element x to existing stack s 
+class IntNonEmptyStack(elem:Int , restStack : IntStack ) extends IntStack {
+	def isEmpty : Boolean
+	def push(x:Int) : IntStack = new IntNonEmptyStack
+	def pop : IntStack
+	def top : Int
+	
+}

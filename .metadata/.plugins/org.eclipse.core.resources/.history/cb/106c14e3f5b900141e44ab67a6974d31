@@ -1,0 +1,9 @@
+package com.self
+import com.self.selfTrait.Car;
+import com.self.selfTrait.Shiny
+
+//Class BMW needs to be abstract since value shineRefraction defined in Shiny is not defined
+class BMW extends Car with Shiny{
+  val brand = "BMW"
+  val shineRefraction = 1;
+}

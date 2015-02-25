@@ -1,0 +1,26 @@
+package com.self.patternMatching
+
+/*case Calculator(ourBrand, ourModel) => "Calculator: %s %s is of unknown type".format(ourBrand) 
+ * Then  Exception in thread "main" java.util.MissingFormatArgumentException: Format specifier 's' */
+
+object MatchingOnClassMembers1 extends App{
+
+			val hp20b = Calculator("hp", "20B")
+			val hp30b = Calculator("hp", "30B")
+
+			def calcType(calc: Calculator) = calc match {
+			case Calculator("hp", "20B") => "financial"
+			case Calculator("hp", "48G") => "scientific"
+			case Calculator("hp", "30B") => "business"
+			//case Calculator(ourBrand, ourModel) => "Calculator: %s %s is of unknown type".format(ourBrand, ourModel)
+			//case Calculator(_, _) => "Calculator of unknown type"
+			case c@Calculator(_, _) => "Calculator: %s of unknown type".format(c)
+			
+			//c@Calculator(_, _) re-bind the matched value with another name  
+	}
+
+			println(calcType(hp20b))
+			println(calcType(Calculator("sony","20B")))
+
+			
+}

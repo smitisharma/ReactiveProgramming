@@ -1,0 +1,64 @@
+package com.self.collections.FunctionalCombinators
+
+object FunctionalCombinators {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  
+ 	var numbers = List(1,3,4,5,2,6,7,8,9,10)  //> numbers  : List[Int] = List(1, 3, 4, 5, 2, 6, 7, 8, 9, 10)
+ 	
+  //find returns the first element of a collection that matches a predicate function.
+  numbers.find((i: Int) => i > 5)                 //> res0: Option[Int] = Some(6)
+  
+  //drop drops the first i elements. Returns new list but actual
+  //list will remain same
+	numbers.drop(5)                           //> res1: List[Int] = List(6, 7, 8, 9, 10)
+	
+	/*dropWhile removes the first elements that match a predicate function. For example,
+	if we dropWhile odd numbers from our list of numbers, 1,3 gets dropped (but not 5 which is “shielded” by 4).*/
+	numbers.dropWhile(_ % 2 != 0)             //> res2: List[Int] = List(4, 5, 2, 6, 7, 8, 9, 10)
+	
+	//foldLeft addes all the elements of list from left and store the result in accumulator.
+	//initial value accumulator = 0
+	numbers.foldLeft(0)((accumulator: Int, listItem: Int) => { accumulator + listItem} )
+                                                  //> res3: Int = 55
+	
+	numbers.foldLeft(0)((accumulator: Int, listItem: Int) => { println(accumulator +" + "+ listItem);	accumulator + listItem} )
+                                                  //> 0 + 1
+                                                  //| 1 + 3
+                                                  //| 4 + 4
+                                                  //| 8 + 5
+                                                  //| 13 + 2
+                                                  //| 15 + 6
+                                                  //| 21 + 7
+                                                  //| 28 + 8
+                                                  //| 36 + 9
+                                                  //| 45 + 10
+                                                  //| res4: Int = 55
+           
+  	//foldRight addes all the elements of list from right and store the result in accumulator.
+  numbers.foldRight(0) { (listItem: Int, accumulator: Int) => println( listItem + " + " + accumulator); listItem + accumulator }
+                                                  //> 10 + 0
+                                                  //| 9 + 10
+                                                  //| 8 + 19
+                                                  //| 7 + 27
+                                                  //| 6 + 34
+                                                  //| 2 + 40
+                                                  //| 5 + 42
+                                                  //| 4 + 47
+                                                  //| 3 + 51
+                                                  //| 1 + 54
+                                                  //| res5: Int = 55
+   
+   //flatten collapses one level of nested structure.
+   List(List(1, 2), List("a", 4)).flatten         //> res6: List[Any] = List(1, 2, a, 4)
+   
+   
+   //FLATMAP
+   val nestedMembers = List( List(1,2) , List(3,4))
+                                                  //> nestedMembers  : List[List[Int]] = List(List(1, 2), List(3, 4))
+   //step1 : apply map function on inner and outer list
+   var mappedMembers = nestedMembers.map( (x : List[Int]) => x.map(_ * 2))
+                                                  //> mappedMembers  : List[List[Int]] = List(List(2, 4), List(6, 8))
+   
+ //step2 : flatten the list
+    
+}

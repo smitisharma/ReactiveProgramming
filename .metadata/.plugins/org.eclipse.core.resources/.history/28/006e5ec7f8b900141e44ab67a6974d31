@@ -1,0 +1,8 @@
+package com.self.apply
+
+/*On creating FooMaker object Foo class object will be returned*/
+object FooMaker {
+
+  def apply() = new Foo
+  
+}

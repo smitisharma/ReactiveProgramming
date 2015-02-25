@@ -1,0 +1,8 @@
+package com.self.Exceptions
+
+class remoteCalculatorService {
+
+  def add(m:Int , n:Int) = m +n
+		 
+  def close = println("Graceful closing the object ")
+}

@@ -1,0 +1,7 @@
+package com.self.model
+
+object CurriedFunction extends App{
+
+  def multiply(m: Int)(n: Int): Int = m * n
+  
+}

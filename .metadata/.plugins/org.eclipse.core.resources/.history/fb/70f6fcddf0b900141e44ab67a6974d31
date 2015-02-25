@@ -1,0 +1,7 @@
+package com.self.model
+
+object AnonymousFunction extends App {
+
+	val addOne = (x: Int) => x + 1
+	println((3))
+}

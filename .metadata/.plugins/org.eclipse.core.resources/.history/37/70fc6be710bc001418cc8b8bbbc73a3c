@@ -1,0 +1,9 @@
+package com.self.collections.FunctionalCombinators
+
+/*List(1, 2, 3) map squared applies the function squared to the elements of the list, returning a new list, perhaps List(1, 4, 9). */
+object map extends App{
+
+  var numbers  = List(1,2,3)
+  numbers.map((i: Int) => i * 2)
+  println(numbers)
+}

@@ -1,0 +1,18 @@
+package com.self.patternMatching
+import com.self.model.Calculator
+
+object MatchingOnClassMembers extends App {
+  
+  def calcType(calc: Calculator) = calc match {
+  case _ if calc.brand == "hp" && calc.color == "30B" => "financial"
+  case _ if calc.color == "white" => "scientific"
+ // case _ if calc.brand == "hp" && calc.color == "30B" => "business"  //Error because brand is mentioned in constructor not 
+    //as class member variable
+  case _ => "unknown"
+}
+  
+  val calType = calcType(new Calculator("HP"))
+  println(calType)
+
+
+}

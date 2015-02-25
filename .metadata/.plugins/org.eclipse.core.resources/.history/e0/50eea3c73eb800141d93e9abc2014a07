@@ -1,0 +1,9 @@
+package com.self.model
+
+class IntEmptyStack extends IntStack{
+  
+  def isEmpty =true
+  def top = error("EmptyStack.top")
+  def pop = error()
+
+}

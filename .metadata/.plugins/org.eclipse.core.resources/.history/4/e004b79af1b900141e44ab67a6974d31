@@ -1,0 +1,11 @@
+package com.self.model
+
+object PartialFunction extends App{
+  
+  def adder (m:Int, n:Int) = m+n
+  
+  val addTwo = adder(2, _:Int)
+  
+  
+
+}

@@ -1,0 +1,16 @@
+package com.self.patternMatching
+
+object CaseClassTest1 extends App{
+
+	val hp20b = Calculator("hp", "20B")
+			val hp30b = Calculator("hp", "30B")
+
+			def calcType(calc: Calculator) = calc match {
+			case Calculator("hp", "20B") => "financial"
+			case Calculator("hp", "48G") => "scientific"
+			case Calculator("hp", "30B") => "business"
+			case Calculator(ourBrand, ourModel) => "Calculator: %s %s is of unknown type".format(ourBrand, ourModel)
+	}
+
+
+}

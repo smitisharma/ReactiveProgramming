@@ -1,0 +1,17 @@
+package com.self.patternMatching
+
+class CalculatorOne {
+
+
+	val brand:String = "HP"
+	val color: String = if (brand == "HP"){
+		"blue"
+	}else {
+		"white"
+	}
+
+
+
+
+
+}

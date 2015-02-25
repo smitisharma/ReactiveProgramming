@@ -1,0 +1,19 @@
+package com.self.patternMatching
+
+class CalculatorOne {
+
+
+	val brand:String 
+	val color: String = if (brand == "HP"){
+		"blue"
+	}else {
+		"white"
+	}
+
+
+def add(m:Int, n:Int) :Int = m+n;
+
+def common(str:String) = str+"xx";
+
+
+}

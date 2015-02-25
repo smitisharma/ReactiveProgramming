@@ -1,0 +1,11 @@
+package com.self.patternMatching
+
+object Example2 extends App {
+  
+  val times = 1
+  
+  times match {
+    case i if i == 1 => "one"
+  }
+
+}

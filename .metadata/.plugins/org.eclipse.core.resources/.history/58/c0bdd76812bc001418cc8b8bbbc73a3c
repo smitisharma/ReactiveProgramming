@@ -1,0 +1,9 @@
+package com.self.collections.FunctionalCombinators
+
+object zip {
+  
+  var zippedList = List(1, 2, 3).zip(List("a", "b", "c"))
+  
+  println(zippedList)
+
+}

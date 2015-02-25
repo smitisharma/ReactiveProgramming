@@ -1,0 +1,8 @@
+package com.self.apply
+
+object TestApply extends App{
+
+  val newFoo = FooMaker()
+  println(newFoo.fooVariable)
+  
+}

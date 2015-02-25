@@ -1,0 +1,5 @@
+package com.self.FunctionsAreObjects
+
+object TestAddOne extends App {
+	println("Calling an object as function "+addOne(10))
+}

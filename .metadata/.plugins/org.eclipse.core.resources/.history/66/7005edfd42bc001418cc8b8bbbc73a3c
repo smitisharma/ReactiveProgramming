@@ -1,0 +1,12 @@
+package com.self.collections.FunctionalCombinators
+
+object GeneralizedFunctionalCombinators {
+  
+  def ourMap(numbers: List[Int], fn: Int => Int): List[Int] = {
+  numbers.foldRight(List[Int]()) { (x: Int, xs: List[Int]) =>
+    fn(x) :: xs
+  }
+}
+  ourMap(numbers, timesTwo(_))
+
+}

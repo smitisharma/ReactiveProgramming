@@ -1,0 +1,11 @@
+package com.self.model
+
+object CurriedFunction extends App{
+
+  def multiply(m: Int)(n: Int): Int = m * n
+  
+  println(multiply(2)(3))
+  
+  var multipleByTwoFunction = multiply(2)(_)
+  
+}

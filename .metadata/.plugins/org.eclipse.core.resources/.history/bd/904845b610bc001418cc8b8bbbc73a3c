@@ -1,0 +1,6 @@
+package com.self.collections.FunctionalCombinators
+
+object map {
+
+  numbers.map((i: Int) => i * 2)
+}
